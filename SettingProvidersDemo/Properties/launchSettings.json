@@ -1,0 +1,15 @@
+{
+  "profiles": {
+    "SettingProvidersDemo": {
+      "commandName": "Project",
+      "commandLineArgs": "--key1=value1 --key2=value2 /key3=value3 key4=value4 -key5=value5",
+      "environmentVariables": {
+        "key2": "value22",
+        "key1": "value11",
+        "env__key3": "value33",
+        "env_key4": "value44",
+        "OneDrive": "MyDrive"
+      }
+    }
+  }
+}
