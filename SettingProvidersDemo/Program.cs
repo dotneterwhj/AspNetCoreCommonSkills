@@ -131,6 +131,7 @@ namespace SettingProvidersDemo
 
             var config = new Config();
 
+            // Microsoft.Extensions.Configuration.Binder
             // 绑定强类型对象
             configurationRoot.Bind(config);
 
@@ -147,14 +148,13 @@ namespace SettingProvidersDemo
 
             // 可以一直检测文件内容发生变化
             ChangeToken.OnChange(() =>
-            {
-                return configurationRoot.GetReloadToken();
-            },
-            root =>
-            {
-                Console.WriteLine("文件发生了变化");
-                Console.WriteLine($"新值AllowedHosts:{root["AllowedHosts"]}");
-            }, configurationRoot);
+                {
+                    return configurationRoot.GetReloadToken();
+                }, root =>
+                {
+                    Console.WriteLine("文件发生了变化");
+                    Console.WriteLine($"新值AllowedHosts:{root["AllowedHosts"]}");
+                }, configurationRoot);
 
             while (Console.ReadKey().Key == ConsoleKey.Enter)
             {
@@ -175,7 +175,7 @@ namespace SettingProvidersDemo
 
             configurationBuilder.AddMyConfigurationSource();
 
-            IConfigurationRoot configurationRoot= configurationBuilder.Build();
+            IConfigurationRoot configurationRoot = configurationBuilder.Build();
 
             Console.WriteLine(configurationRoot["lastTime"]);
 

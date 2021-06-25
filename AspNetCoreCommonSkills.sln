@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StartUpDemo", "StartUpDemo\StartUpDemo.csproj", "{E4EC7886-392D-4D21-AB86-F201ED84E8B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StartUpDemo", "StartUpDemo\StartUpDemo.csproj", "{E4EC7886-392D-4D21-AB86-F201ED84E8B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SettingProvidersDemo", "SettingProvidersDemo\SettingProvidersDemo.csproj", "{A339C96B-64D5-41A1-84ED-900217F98082}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SettingProvidersDemo", "SettingProvidersDemo\SettingProvidersDemo.csproj", "{A339C96B-64D5-41A1-84ED-900217F98082}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SettingOptionsDemo", "SettingOptionsDemo\SettingOptionsDemo.csproj", "{0F36ACF4-9432-4067-A1F7-901D8EC58D12}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{A339C96B-64D5-41A1-84ED-900217F98082}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A339C96B-64D5-41A1-84ED-900217F98082}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A339C96B-64D5-41A1-84ED-900217F98082}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F36ACF4-9432-4067-A1F7-901D8EC58D12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F36ACF4-9432-4067-A1F7-901D8EC58D12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F36ACF4-9432-4067-A1F7-901D8EC58D12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F36ACF4-9432-4067-A1F7-901D8EC58D12}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
